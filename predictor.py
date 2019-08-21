@@ -1,4 +1,3 @@
-
 import pandas as pd
 # Importing the dataset
 dataset = pd.read_csv('data/odi.csv')
@@ -29,6 +28,6 @@ print("R square value:" , score)
 
 # Testing with a custom input
 import numpy as np
-new_prediction = lin.predict_proba(sc.transform(np.array([[100,2,10,23,52,200]])))
+new_prediction = lin.predict_proba(sc.transform(np.array([[100,2,10,23,52,350]])))
 print("Prediction score:" , new_prediction[0][1]*100)
 
